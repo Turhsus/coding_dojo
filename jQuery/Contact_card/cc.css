@@ -1,0 +1,13 @@
+.left{
+	width: 500px;
+	display: inline-block;
+}
+
+.right{
+	width: 500px;
+	display: inline-block;
+}
+
+.desc{
+	display: none;
+}

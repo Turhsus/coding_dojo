@@ -1,0 +1,128 @@
+$lightestGray: #E9E9E9;
+$grayBorder: 1px solid lightgray;
+
+@mixin button($background-color){
+	background-color: $background-color;
+	color: white;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+*{
+	margin: 0px;
+}
+
+.logo{
+	vertical-align: middle;
+	margin: 42px 0px 37px 12px;
+}
+
+.logoTot{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 2em;
+	font-family: sans-serif;
+}
+
+.navbar{
+	padding: 0px 10px 15px 10px;
+	background-color: $lightestGray;
+	display: inline;
+	border-radius: 0px 0px 5px 5px;
+	border: $grayBorder;
+	vertical-align: top;
+	font-size: .9em;
+	margin-left: 500px;
+
+	li{
+		vertical-align: top;
+		display: inline;
+		border-right: $grayBorder;
+		padding: 5px 10px;
+	}
+
+	li:last-child{
+		border-right: $lightestGray;
+	}
+}
+
+.login{
+	@include button(dodgerblue);
+	padding: 5px 10px;
+	position: relative;
+	bottom: 54px;
+	left: 37px;
+}
+
+.header{
+	background-color: SteelBlue;
+	color: white;
+	font-size: 2em;
+	padding: 20px 5px;
+}
+
+.sidebar{
+	width: 230px;
+	margin: 70px 10px 10px 10px;
+
+	.topSideBar{
+		text-align: center;
+		border-bottom: $grayBorder;
+
+		.driveProf{
+			padding-bottom: 20px;
+		}
+
+		.schedDem{
+			@include button(dodgerBlue);
+			padding: 10px 0px;
+			width: 220px;
+			text-align: center;
+			margin: 5px 0px;
+		}
+
+		.freeTrial{
+			@include button(orange);
+			text-align: center;
+			width: 220px;
+			padding: 10px 0px;
+		}
+
+		.noCard{
+			display: inline-block;
+			padding: 5px 0px 15px 0px;
+		}
+	}
+
+	.botSideBar{
+		width: 197px;
+		height: 241px;
+		margin: 20px 0px;
+		background-image: url("left_content_ad.png");
+
+		.getGraded{
+			@include button(SteelBlue);
+			padding: 3px 0px;
+		}
+	}
+}
+
+.leftJustify{
+	text-align: left;
+}
+
+.red{
+	color: red;
+}
+
+.blue{
+	color: SteelBlue;
+}
+
+.gray{
+	color: gray
+}
+
+.bold{
+	font-weight: bold;
+}

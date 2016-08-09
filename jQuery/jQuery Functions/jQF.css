@@ -1,0 +1,23 @@
+div{
+	border-bottom: 1px solid grey;
+}
+
+h1{
+	text-align: center;
+}
+
+p{
+	display: inline-block;
+}
+
+.red{
+	color: red;
+}
+
+.yellow{
+	color: yellow;
+}
+
+.blue{
+	color: blue;
+}

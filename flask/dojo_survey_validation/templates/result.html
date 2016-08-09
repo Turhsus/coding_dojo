@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Results</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Submitted Info</h1>
+			<p>
+				Name: {{ session['name'] }}<br>
+				Dojo Location: {{ session['location'] }}<br>
+				Favorite Language: {{ session['language'] }}<br>
+				Comment: {{ session['comments'] }}
+			</p>
+            <form action="/">
+                <input type="submit" value="Go Back">
+            </form>
+		</div>
+	</body>
+</html>

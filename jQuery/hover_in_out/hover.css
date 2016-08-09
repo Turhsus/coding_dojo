@@ -1,0 +1,16 @@
+img{
+	display: inline-block;
+	position: static;
+	border: 2px solid black;
+	margin: 10px;
+}
+
+div{
+	display: inline-block;
+	width: 320px;
+	height: 720px;
+}
+
+.samus{
+	display: none;
+}

@@ -1,0 +1,24 @@
+.activities{
+    margin: 5px 15px;
+}
+.activity{
+    text-align: center;
+    padding: 20px;
+    border: 3px solid black;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.gold{
+    width: 100px;
+    border: 1px solid gold;
+    display: inline-block;
+}
+
+.log{
+    border: 3px solid black;
+    width: 790px;
+    height: 300px;
+    margin-left: 15px;
+    overflow: scroll;
+}

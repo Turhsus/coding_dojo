@@ -1,0 +1,102 @@
+* {
+  margin: 0px; }
+
+.logo {
+  vertical-align: middle;
+  margin: 42px 0px 37px 12px; }
+
+.logoTot {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2em;
+  font-family: sans-serif; }
+
+.navbar {
+  padding: 0px 10px 15px 10px;
+  background-color: #E9E9E9;
+  display: inline;
+  border-radius: 0px 0px 5px 5px;
+  border: 1px solid lightgray;
+  vertical-align: top;
+  font-size: .9em;
+  margin-left: 500px; }
+  .navbar li {
+    vertical-align: top;
+    display: inline;
+    border-right: 1px solid lightgray;
+    padding: 5px 10px; }
+  .navbar li:last-child {
+    border-right: #E9E9E9; }
+
+.login {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+  bottom: 54px;
+  left: 37px; }
+
+.header {
+  background-color: SteelBlue;
+  color: white;
+  font-size: 2em;
+  padding: 20px 5px; }
+
+.sidebar {
+  width: 230px;
+  margin: 70px 10px 10px 10px; }
+  .sidebar .topSideBar {
+    text-align: center;
+    border-bottom: 1px solid lightgray; }
+    .sidebar .topSideBar .driveProf {
+      padding-bottom: 20px; }
+    .sidebar .topSideBar .schedDem {
+      background-color: dodgerBlue;
+      color: white;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 10px 0px;
+      width: 220px;
+      text-align: center;
+      margin: 5px 0px; }
+    .sidebar .topSideBar .freeTrial {
+      background-color: orange;
+      color: white;
+      border-radius: 5px;
+      display: inline-block;
+      text-align: center;
+      width: 220px;
+      padding: 10px 0px; }
+    .sidebar .topSideBar .noCard {
+      display: inline-block;
+      padding: 5px 0px 15px 0px; }
+  .sidebar .botSideBar {
+    width: 197px;
+    height: 241px;
+    margin: 20px 0px;
+    background-image: url("left_content_ad.png"); }
+    .sidebar .botSideBar .getGraded {
+      background-color: SteelBlue;
+      color: white;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 3px 0px; }
+
+.leftJustify {
+  text-align: left; }
+
+.red {
+  color: red; }
+
+.blue {
+  color: SteelBlue; }
+
+.gray {
+  color: gray; }
+
+.bold {
+  font-weight: bold; }
+
+/*# sourceMappingURL=wStreamStyle.css.map */

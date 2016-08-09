@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>All Emails!</title>
+    </head>
+    <body>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="success">{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <h1>Email Addresses Entered</h1>
+        {% for mail in all_email %}
+            <p>
+                <form action="/delete/{{mail['id']}}" method="post">
+                    <input type="submit" name="delete" value="Delete User!">
+                </form>
+                {{ mail['email'] }} {{ mail['CREATED_AT'] }}
+            </p>
+        {% endfor %}
+    </body>
+</html>

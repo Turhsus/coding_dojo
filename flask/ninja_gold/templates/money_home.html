@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Money</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='nin.css') }}">
+{#    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>#}
+{#		<script type="text/javascript">#}
+{#			$(document).ready(function(){#}
+{##}
+{#				$("img").click(function(){#}
+{#					var temp = $(this).attr("alt-src");#}
+{#					$(this).attr("alt-src", $(this).attr("src"));#}
+{#					$(this).attr("src", temp);#}
+{#				});#}
+{#			});#}
+{#		</script>#}
+</head>
+<body>
+    <div>
+        Your Gold: <div class = "gold"> {{ session['gold'] }}</div>
+    </div>
+    <div class="activities">
+        <div class="activity">
+            <h3>Farm</h3>
+            <p>(earns 10 - 20 gold)</p>
+            <form action="/process_money" method='POST'>
+                <input type="hidden" name="gold_type" value="farm">
+                <input type="submit" name="Submit" value="Find Gold!">
+            </form>
+        </div>
+        <div class="activity">
+            <h3>Cave</h3>
+            <p>(earns 5 - 10 gold)</p>
+            <form action="/process_money" method='POST'>
+                <input type="hidden" name="gold_type" value="cave">
+                <input type="submit" name="Submit" value="Find Gold!">
+            </form>
+        </div>
+        <div class="activity">
+            <h3>House</h3>
+            <p>(earns 2 - 5 gold</p>
+            <form action="/process_money" method='POST'>
+                <input type="hidden" name="gold_type" value="house">
+                <input type="submit" name="Submit" value="Find Gold!">
+            </form>
+        </div>
+        <div class="activity">
+            <h3>Casino</h3>
+            <p>(earns/takes 0 - 50 gold)</p>
+            <form action="/process_money" method='POST'>
+                <input type="hidden" name="gold_type" value="casino">
+                <input type="submit" name="Submit" value="Find Gold!">
+            </form>
+        </div>
+    </div>
+    Activities
+    <div class="log">
+        {%for i in list %}
+        <p>{{ i }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

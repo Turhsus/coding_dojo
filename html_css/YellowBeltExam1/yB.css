@@ -1,0 +1,186 @@
+*{
+	vertical-align: top;
+	margin: 0px;
+}
+
+.container{
+	background-color: black;
+	width: 994px;
+	height: 1205px;
+}
+
+.header{
+	width: 978px;
+	height: 116px;
+	background-color: #1A1A1A;
+	margin: 0px 8px;
+}
+	.header img{
+		margin-left: 22px;
+		margin-top: 22px;
+	}
+
+	.header p{
+		display: inline-block;
+		margin-top: 30px;
+		margin-left: 547px;
+	}
+
+.navBar{
+	width: 978px;
+	height: 42px;
+	background-color: #505050;
+	margin: 0px 8px;
+	border-bottom: 1px solid black;
+}
+	.navBar ul{
+		padding-left: 20px;
+	}
+	.navBar ul li{
+		margin: 12px 0px;
+		padding: 0px 16px;
+		display: inline-block;
+		border-right: 1px groove gray;
+	}
+
+	.navBar ul li:last-child{
+		border-right: 0px slategrey;
+	}
+
+.scrollingPics{
+	width: 978px;
+	height: 362px;
+	background-color: #505050;
+	margin: 0px 8px;
+}
+	.scrollingPics img{
+		width: 978px;
+	}
+
+.optionBar{
+	width: 978px;
+	height: 157px;
+	background-color: #1A1A1A;
+	margin: 0px 8px;
+}
+	.option{
+		margin: 32px 5px;
+		display: inline-block;
+		width: 230px;
+		height: 157px;
+	}
+		.option h3{
+			color: orange;
+		}
+		.optionText{
+			color: white;
+			width: 174px;
+			display: inline-block;
+		}
+		.option img{
+			height: 40px;
+			margin-bottom: 35px;
+		}
+
+.diagonalBackground{
+	width: 978px;
+	height: 116px;
+    background-image: url("gray_stripes.png");
+    background-size: 4px 4px;
+	margin: 0px 8px;
+}
+	.bibendum{
+		display: inline-block;
+		color: white;
+		width: 630px;
+		margin-left: 20px;
+		margin-top: 24px;
+	}
+		.bibendum h2{
+			color: white;
+			font-weight: normal;
+		}
+		.bibendum p{
+			color: grey;
+		}
+
+	.buy{
+		background-color: orange;
+		color: white;
+		border-radius: 5px;
+		border: none;
+		font-size: 1.1em;
+		padding: 10px 20px;
+		margin-top: 32px;
+		margin-left: 170px;
+	}
+
+.portfolioOptions{
+	width: 958px;
+	height: 411px;
+	background-color: #101010;
+	margin: 0px 8px;
+	padding: 0px 0px 0px 20px;
+}
+	.portfolioBar{
+		padding-top: 35px;
+		padding-bottom: 25px;
+	}
+		.portfolioBar h3{
+			display: inline-block;
+			color: white;
+		}
+
+		.portfolioBar a{
+			text-decoration: none;
+			display: inline-block;
+			color: orange;
+			margin-left: 759px;
+			font-style: italic;
+			font-size: .8em;
+		}
+
+	.pOps{
+		display: inline-block;
+		width: 225px;
+		margin-right: 10px;
+	}
+		.pOps img{
+			width: 210px;
+			height: 135px;
+			border: 5px solid grey;
+		}
+		.pOps h4{
+			color: darkorange;
+			padding: 18px 0px;
+		}
+		.pOps p{
+			color: #CCCCCC;
+		}
+	.back{
+		display: block;
+		text-decoration: none;
+		color: darkgrey;
+		font-size: .8em;
+		text-align: right;
+		margin-top: 24px;
+		margin-right: 20px;
+	}
+
+/*Font classes*/
+
+.bold{
+	font-weight: bold;
+}
+
+.white{
+	color: white;
+}
+
+.sans-serif{
+	font-family: sans-serif;
+}
+
+.gray{
+	color: darkgrey;
+}

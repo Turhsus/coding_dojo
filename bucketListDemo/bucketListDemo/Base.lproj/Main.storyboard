@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iF9-qi-gMg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Bucket List-->
+        <scene sceneID="VfM-un-poE">
+            <objects>
+                <tableViewController id="E8n-Qq-2NP" customClass="BucketListTableViewController" customModule="bucketListDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Yac-iK-K5i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="missionCell" id="Wp5-AE-zyF">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wp5-AE-zyF" id="xLc-C2-ecP">
+                                    <rect key="frame" x="0.0" y="0.0" width="533" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ii9-1G-pQv" kind="presentation" identifier="EditMIssion" trigger="accessoryAction" id="vZF-w5-1YY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="E8n-Qq-2NP" id="0k6-YY-9lF"/>
+                            <outlet property="delegate" destination="E8n-Qq-2NP" id="i2r-TX-mi3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Bucket List" id="Jct-wP-yPe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="82w-Vu-UE0">
+                            <connections>
+                                <segue destination="ii9-1G-pQv" kind="presentation" identifier="addMission" id="FvL-QJ-P0z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asX-RU-ZcG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402" y="470"/>
+        </scene>
+        <!--Mission Controller-->
+        <scene sceneID="bBo-8L-fDC">
+            <objects>
+                <viewController id="fTp-bq-IEn" customClass="MissionDetailsViewController" customModule="bucketListDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q9G-Vn-itJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="RQF-FR-wet"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gtk-AJ-bfe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iqm-wf-6il">
+                                <rect key="frame" x="196" y="91" width="208" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="WFf-h9-IVF"/>
+                                    <constraint firstAttribute="height" constant="30" id="yLi-wj-4dW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iqm-wf-6il" firstAttribute="top" secondItem="q9G-Vn-itJ" secondAttribute="bottom" constant="27" id="RYF-ws-dAL"/>
+                            <constraint firstItem="Iqm-wf-6il" firstAttribute="centerX" secondItem="gtk-AJ-bfe" secondAttribute="centerX" id="wJC-eI-Tw7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mission Controller" id="7dX-2X-4nC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Kwa-Fv-es8">
+                            <connections>
+                                <action selector="cancelPressed:" destination="fTp-bq-IEn" id="aof-VP-HF0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="U9Q-q6-fXQ">
+                            <connections>
+                                <action selector="donePressed:" destination="fTp-bq-IEn" id="oRs-ek-3Hl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="userTextField" destination="Iqm-wf-6il" id="YZr-SS-amk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GqM-yo-WrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2198" y="1199"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5rT-cV-fB0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iF9-qi-gMg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x9p-c0-xAm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="E8n-Qq-2NP" kind="relationship" relationship="rootViewController" id="K8h-cl-5Ac"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cj3-k2-cDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="470"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ovh-48-n1c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ii9-1G-pQv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jrc-xV-zoS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fTp-bq-IEn" kind="relationship" relationship="rootViewController" id="iuk-Ae-FcR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Llc-EN-kqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402" y="1199"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vZF-w5-1YY"/>
+    </inferredMetricsTieBreakers>
+</document>

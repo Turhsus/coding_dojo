@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Card</title>
+		<link rel="stylesheet" type="text/css" href="cc.css">
+		<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>	
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$("form").submit(function(){
+					var first = $(this).find("input[name=first_name]").val();
+					var last = $(this).find("input[name=last_name]").val();
+					var description = $(this).find("input[name=description]").val();
+					$(".right").append('<div class="card">' + '<div>' + first + ' ' + last + '</div>' + '<div class=desc>' + description + '</div></div>');
+					return false;
+				});
+
+				$(document).on('click', '.card', function(){
+					$(this).children().toggle();
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<div class="left">
+			<form>
+				First name: <input type="text" name="first_name"> <br>
+				Last name: <input type="text" name="last_name"> <br>
+				Description: <br>
+				<input type="textarea" name="description" placeholder="Enter description"> <br>
+				<input type="submit" name="add_user" value="Add User">
+			</form>
+		</div>
+		<div class="right">
+			
+		</div>
+	</body>
+</html>

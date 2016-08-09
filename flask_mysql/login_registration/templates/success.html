@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Successfully Logged In</title>
+    </head>
+    <body>
+        SUCCESS!
+        Welcome {{ session['user'] }}
+        <form action="/log_out" method="post">
+            <input type="submit" value="Log Out!">
+        </form>
+    </body>
+</html>

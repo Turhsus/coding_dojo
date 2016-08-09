@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Accordion, Tab, and Something Else</title>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="sn.css">
+		<script type="text/javascript">
+			$(function() {
+				$("#tabs").tabs();
+			});
+
+			$(function() {
+				$("#accordion").accordion();
+			});
+			$(function() {
+				$('#food_menu').menu();
+			});
+
+		</script>
+		<style>
+  			.ui-menu { width: 150px; }
+  		</style>
+	</head>
+	<body>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">First tab!</a></li>
+				<li><a href="#tabs-2">Second tab!</a></li>
+				<li><a href="#tabs-3">Third tab!</a></li>
+			</ul>
+			<div id="tabs-1">
+				<p>This is the stuff that will be in the first tab!</p>
+			</div>
+			<div id="tabs-2">
+				<p>Hello, this is the second tab!</p>
+			</div>
+			<div id="tabs-3">
+				<p>Screw you, I'm tab 3 and like nobody.</p>
+			</div>
+		</div>
+		<div id="accordion">
+			<h3>I WILL BE CLICKED</h3>
+			<div>
+				<p>I AM GLAD YOU ACCEPTED YOUR DESTINY AND CLICKED ME</p>
+			</div>
+			<h6>click me if you want too...</h3>
+			<div>
+				<p>I can't believe you clicked me...</p>
+			</div>
+			<h1>Yo Cool Kid, Click Me!</h3>
+			<div>
+				<p>Hey, thanks for click me man.</p>
+			</div>
+		</div>
+		<ul id="food_menu">
+			<li>Hard
+				<ul>
+					<li>Taco</li>
+					<li>Pizza</li>
+					<li>Sandwich</li>
+				</ul>
+			</li>
+			<li>Soft
+				<ul>
+					<li>Taco</li>
+					<li>Pizza</li>
+					<li>Sandwich</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

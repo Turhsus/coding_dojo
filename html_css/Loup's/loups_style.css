@@ -1,0 +1,61 @@
+#header{
+/*	background-color: #CCCCCC;	
+*/	background-color: lightgrey;
+	border-radius: 30px;
+	height: 79px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+#nav_bar{
+	height: 320px;
+	position: relative;
+	margin-top: 20px;
+	background-color: lightgrey;
+	border-radius: 20px;
+	display: inline-block;
+	padding: 15px 15px 0px 15px;
+	bottom: 125px;
+}
+
+#nav_menu ul li {
+	list-style-type: circle;
+	position: relative;
+	right: 20px;
+}
+
+#nav_menu {
+	position: relative;
+	bottom: 15px;
+	right: 25px;
+}
+
+#nav_bar a{
+	text-decoration: none;
+}
+
+#essay_overview{
+	background-color: darkgray;
+	border-radius: 20px;
+	display: inline-block;
+	padding: 10px;
+	width: 655px;
+	margin: 25px 0px 25px 25px;
+}
+
+#essay_list li{
+	margin-bottom: 25px;
+}
+
+#footer{
+	background-color: lightgrey;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+#red{
+	color: maroon;
+}
+
+.boldness{
+	font-weight: bold;
+}

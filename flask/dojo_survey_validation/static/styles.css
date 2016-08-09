@@ -1,0 +1,12 @@
+.wrapper{
+	display: inline-block;
+	border: 3px solid black;
+	padding: 15px;
+	margin: 150px;
+}
+
+.error{
+	display: inline-block;
+	background-color: #ff0000;
+	color: white;
+}

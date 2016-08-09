@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Disappearing Ninja</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="dN.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				$("img").click(function(){
+					$(this).hide();
+				});
+
+				$("#restore").click(function(){
+					$("img").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+			<img src="master_chief.png" alt="masta chief">
+		</div>
+		<div>
+			<img src="master_chief.png" alt="masta chief">
+		</div>
+		<div>
+			<img src="master_chief.png" alt="masta chief">
+		</div>
+		<div>
+			<img src="master_chief.png" alt="masta chief">
+		</div>
+		<div>
+			<img src="master_chief.png" alt="masta chief">
+		</div>
+		<div>
+			<img src="master_chief.png" alt="masta chief">
+		</div>
+		<div>
+			<img src="master_chief.png" alt="masta chief">
+		</div>
+		<br>
+		<button id="restore">Restore</button>
+	</body>
+</html>

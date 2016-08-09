@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Testing jQuery Functions</title>
+		<link rel="stylesheet" type="text/css" href="jQF.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function (){
+
+				$('.addClass').click(function (){
+					$(".changeP").addClass("red");
+				});
+
+				$('.after').click(function (){
+					$(".changeP").after("<p>!</p>");
+				});
+
+				$('.append').click(function (){
+					$(".changeList").append("<li>Suck</li>");
+				});
+
+				$('.attr').click(function (){
+					$(".changeP").attr("class", "yellow");
+				});
+
+				$('.before').click(function (){
+					$(".changeP").before("<p>Instructions: </p>");
+				});
+
+				$('.html').click(function (){
+					$(".changeP").html("<p>Open the Pod Bay doors Hal</p>");
+				});
+
+				$('.text').click(function (){
+					$(".changeP").text("<p>I'm afraid I can't do that Dave.</p>");
+				});
+
+				$('.val').click(function (){
+					$("input").val("I've changed!");
+				});
+
+				$('.toggle').click(function (){
+					$(".changeP").toggle();
+				});
+
+				$('.hideNshow').hover(function (){
+					$(".changeP").hide();
+				}, 
+				function(){
+					$(".changeP").show();
+				});
+
+				$('.slideDNU').hover(function (){
+					$(".changeP").slideUp();
+				}, 
+				function(){
+					$(".changeP").slideDown();
+				});
+
+				$('.slideToggle').click(function(){
+					$(".changeP").slideToggle();
+				});
+
+				$('.fade').hover(function (){
+					$(".changeP").fadeOut();
+				}, 
+				function(){
+					$(".changeP").fadeIn();
+				});
+
+				$('#fadeForm').focus(function(){
+					$(".changeP").addClass("blue");
+				});
+
+				$('.data').click(function(){
+					$(".cool").data("store", "cool!");
+					alert( $(".cool").data("store") );
+				});
+
+			});
+
+		</script>
+	</head>
+	<body>
+		<div>
+			<h1>AddClass</h1>
+			<button class="addClass">Please Click Me</button>
+			<p class="changeP">Click the button to add class "red" to all paragraphs!</p>
+		</div>
+		<div>
+			<h1>After</h1>
+			<button class="after">Click Me!</button>
+			<p class="changeP">Click the button to add a second exclamation point after every paragraph!</p>
+		</div>
+		<div>
+			<h1>Append</h1>
+			<button class="append">Press Me</button>
+			<p class="changeP">Click the button to add a new list element to the lists!</p>
+			<ul class="changeList">
+				<li>Hello</li>
+				<li>World</li>
+				<li>You</li>
+			</ul>
+		</div>
+		<div>
+			<h1>Attr</h1>
+			<button class="attr">Ravish Me With Clicks</button>
+			<p class="changeP">Click the button to add a new class attribute with value "yellow": Warning this will erase all existing classes! Hence, this button will work only once, in fact all buttons that reference the "changeP" class will be broken after clicking this one.</p>
+		</div>
+		<div>
+			<h1>Before</h1>
+			<button class="before">Give Me A Clicktastrophe</button>
+			<p class="changeP">Click the button to add a new word before each paragraph!</p>
+			<ul class="changeList">
+				<li>This</li>
+				<li>Coding</li>
+				<li>Dojo</li>
+			</ul>
+		</div>
+		<div>
+			<h1>Html</h1>
+			<button class="html">Clickamanjaro</button>
+			<p class="changeP">Click the button change each paragraph to something else entirely using html code!</p>
+		</div>
+		<div>
+			<h1>Text</h1>
+			<button class="text">Clicktacular</button>
+			<p class="changeP">Click the button change each paragraph to something else entirely using just plain text!</p>
+		</div>
+		<div>
+			<h1>Val</h1>
+			<button class="val">DoubleClick</button>
+			<form class="changeForm">
+				Click the button to change the text in the form!:
+				<input type="text" name="testForm" placeholder="Change Me!">
+			</form>
+		</div>
+		<div>
+			<h1>Toggle</h1>
+			<button class="toggle">TripleClick</button>
+			<p class="changeP">Click the button to toggle each paragraph!</p>
+		</div>
+		<div>
+			<h1>Hide and Show</h1>
+			<button class="hideNshow">ClickingSpree</button>
+			<p class="changeP">Hover over the button to hide each paragraph! Stop hovering to reveal each paragraph again!</p>
+		</div>
+		<div>
+			<h1>Slide: Down, Toggle, Up</h1>
+			<button class="slideDNU">Slide: Up/Down</button>
+			<button class="slideToggle">TOGGLE ME</button>
+			<p class="changeP">Hover over the Slide: Up/Down button to slide out each paragraph! Stop hovering to slide in each paragraph again or click the toggle button to toggle slide each paragraph!</p>
+		</div>
+		<div>
+			<h1>Fade: In, Out</h1>
+			<button class="fade">Slide: In/Out</button>
+			<p class="changeP">Hover over button to fade out, stop hovering to fade in</p>
+		</div>
+		<div>
+			<h1>Focus</h1>
+			<form>
+				<form class="changeForm">
+				Give focus to the the following box color all paragraphs blue!:
+				<input type="text" id="fadeForm" placeholder="Change Me!">
+			</form>
+			</form>
+		</div>
+		<div>
+			<h1>Data</h1>
+			<button class="data">Give me a Click Facial</button>
+			<p class="changeP cool">Click the button to store the data "cool!" and send out an alert that it did that!</p>
+		</div>
+	</body>
+</html>

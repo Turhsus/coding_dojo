@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The wall</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='wall.css') }}">
+</head>
+<body>
+    <p> Welcome to the wall! {{ session['user'] }}</p>
+    <form action="/log_out" method="post">
+        <input type="submit" value="Log Out!">
+    </form>
+    {%  for message in all_messages %}
+        <p>
+            <h3>{{ message['first_name'] }} {{ message['last_name'] }} - {{ message['mcat'] }}</h3>
+            {{ message['message'] }}
+                <div class = "comment">
+                {% for comment in all_comments %}
+                    {% if comment['message_id'] == message['mid'] %}
+                        <h3>{{ comment['first_name'] }} {{ comment['last_name'] }} - {{ comment['ccat'] }}</h3>
+                        {{ comment['comments'] }}
+                    {% endif %}
+                {% endfor %}
+                </div>
+            <form action="/comment/{{message['mid']}}" method="post">
+                <input type="textarea" name="comment" placeholder="Write a comment!">
+                <input type="submit" value="Post Comment">
+            </form>
+        </p>
+    {% endfor %}
+    <form action="/message" method="post">
+        <input type="textarea" name="message" placeholder="Write a message!">
+        <input type="submit" value="Post">
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Disappearing Ninja</title>
+		<link rel="stylesheet" type="text/css" href="hover.css">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="dN.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				//$(".samus").hide();
+				
+				$(".master_chief").hover(function(){
+					$(this).attr('src', "samus.png");
+					// $(this).sibling().show();
+				}, function(){
+					$(this).attr('src', "master_chief.png");
+					// $(this).sibling().hide();
+				});
+
+				$("#restore").click(function(){
+					$("img").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+			<img class="master_chief" src="master_chief.png" alt="masta chief">
+			<img class="samus" src="samus.png" alt="samus">
+		</div>
+		<div>
+			<img class="master_chief" src="master_chief.png" alt="masta chief">
+			<img class="samus" src="samus.png" alt="samus">
+		</div>
+		<div>
+			<img class="master_chief" src="master_chief.png" alt="masta chief">
+			<img class="samus" src="samus.png" alt="samus">
+		</div>
+		<div>
+			<img class="master_chief" src="master_chief.png" alt="masta chief">
+			<img class="samus" src="samus.png" alt="samus">
+		</div>
+		<div>
+			<img class="master_chief" src="master_chief.png" alt="masta chief">
+			<img class="samus" src="samus.png" alt="samus">
+		</div>
+		<div>
+			<img class="master_chief" src="master_chief.png" alt="masta chief">
+			<img class="samus" src="samus.png" alt="samus">
+		</div>
+		<div>
+			<img class="master_chief" src="master_chief.png" alt="masta chief">
+			<img class="samus" src="samus.png" alt="samus">
+		</div>
+		<div>
+			<img class="master_chief" src="master_chief.png" alt="masta chief">
+			<img class="samus" src="samus.png" alt="samus">
+		</div>
+		<br>
+		<button id="restore">Restore</button>
+	</body>
+</html>

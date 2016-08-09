@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColdCall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME HERE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6x-Jd-GZu">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BE-pf-pKb">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" red="0.25095068282627708" green="0.87738696462017174" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mzc-NQ-eGV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NUMBER HERE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5z-IM-IJO">
+                                <rect key="frame" x="247" y="248" width="106" height="104"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i5z-IM-IJO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1UO-MA-t61"/>
+                            <constraint firstItem="9BE-pf-pKb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8NX-ff-F8U"/>
+                            <constraint firstItem="f6x-Jd-GZu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9VF-76-eAT"/>
+                            <constraint firstItem="f6x-Jd-GZu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CuX-UP-elX"/>
+                            <constraint firstItem="f6x-Jd-GZu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="INB-xi-Vum"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i5z-IM-IJO" secondAttribute="trailing" id="YOP-lb-Omr"/>
+                            <constraint firstItem="i5z-IM-IJO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dxu-gc-QwX"/>
+                            <constraint firstItem="9BE-pf-pKb" firstAttribute="top" secondItem="i5z-IM-IJO" secondAttribute="bottom" id="fDf-Rk-Jr3"/>
+                            <constraint firstItem="i5z-IM-IJO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g90-5V-zAp"/>
+                            <constraint firstItem="9BE-pf-pKb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hpa-a9-bVE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9BE-pf-pKb" secondAttribute="trailing" id="iYL-5V-cS3"/>
+                            <constraint firstItem="f6x-Jd-GZu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pDO-gy-L7R"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9BE-pf-pKb" secondAttribute="bottom" id="uP0-FY-kJP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="f6x-Jd-GZu" id="Dva-IR-TvZ"/>
+                        <outlet property="numberLabel" destination="i5z-IM-IJO" id="cRJ-q6-DYo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="355"/>
+        </scene>
+    </scenes>
+</document>

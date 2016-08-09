@@ -1,0 +1,129 @@
+*{
+	margin: 0px;
+}
+.red-header{
+	background-color: maroon;
+	padding: 2px;
+	margin: 0px;
+}
+
+.logo{
+	display: inline-block;
+}
+
+.power{
+	color: white;
+	font-family: PT Sans, sans-serif;
+	padding: 3px;
+	position: relative;
+	bottom: 20px;
+	display: inline-block;
+	font-size: 1.5em;
+}
+
+.right-red{
+	display: inline-block;
+}
+
+.text-size{
+	position: relative;
+	bottom: 20px;
+	left: 200px;
+}
+
+.text-size ul li{
+	display: inline-block;
+}
+
+.text-size ul li a{
+	text-decoration: none;
+	color: gold;
+	border-right: 1px solid white;
+	padding: 0px 10px;
+}
+
+.search{
+	margin-left: 251px;
+	position: relative;
+	bottom: 18px;
+	width: 
+}
+
+.searchbar{
+	width: 197px;
+}
+
+.button{
+	background-color: maroon;
+	border: 1px solid white;
+	color: white;
+}
+
+.sizeT{
+	color: white;
+	position: relative;
+	top: 17px;
+	right: 23px;
+	font-family: ptsans, sans-serif;
+	
+}
+
+.top-nav-bar{
+	background-color: #E9E9E9;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.top-nav-bar ul li{
+	display: inline-block;
+	
+}
+
+.top-nav-bar ul li a{
+	text-decoration: none;
+	color: gray;
+	border-right: 1px solid gray;
+	padding: 5px 10px;
+}
+
+#sidebar{
+	background-color: #E9E9E9;
+	display: inline-block;
+	border: 1px solid lightgrey;
+	margin-left: 20px;
+}
+
+#side-list{
+	color: maroon;
+	list-style-type: circle;
+}
+
+#side-list li{
+	margin-bottom: 5px;
+}
+
+#side-list li a{
+	color: maroon;
+}
+
+.main-body{
+	display: inline-block;
+	vertical-align: top;
+	width: 700px;
+	padding: 0px;
+	margin-left: 20px;
+}
+.redlink{
+	color: maroon;
+}
+
+.section-header{
+	color: maroon;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.bold{
+	font-weight: bold;
+}
